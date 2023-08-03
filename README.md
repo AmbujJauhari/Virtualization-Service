@@ -2,6 +2,8 @@
 
 A single application built of multiple microservices communicating together. It will be built on the concept that each team is responsible for their own product components what that means is each team works vertically owning their own microfront end, the logical business layer and the database of their own choosing. 
 
+Application has to be modular enough to choose only certain protocols or components and it should have the ability to bring up new module with a click of button. So there has to be some kind of master level UI which will allow you to initiate new module and add the resources to the existing cluster of services . This would mean we might need chart of charts in helm and we need a hot deployable dart UI because we don't want to just hide the other UI and backend services, we actually don't want it to consume any resources this will keep the application as light as possible and consume bare minimum resources, this might sound like an overkill but it could really be useful from a cloud perspective in terms of saving costs.
+
 Protocols supported
 
 1. HTTP / HTTPs
